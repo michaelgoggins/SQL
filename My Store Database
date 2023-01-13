@@ -1,0 +1,21 @@
+CREATE TABLE my_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, qty INTEGER, dept TEXT);
+
+INSERT INTO my_store VALUES (1, "Hat", 12, 100, "Clothing");
+INSERT INTO my_store VALUES (2, "Shirt", 16, 50, "Clothing");
+INSERT INTO my_store VALUES (3, "Pants", 20, 45, "Clothing");
+INSERT INTO my_store VALUES (4, "Jacket", 21, 40, "Clothing");
+INSERT INTO my_store VALUES (5, "Shorts", 18, 45, "Clothing");
+INSERT INTO my_store VALUES (6, "Socks", 5, 60, "Clothing");
+INSERT INTO my_store VALUES (7, "Belt", 10, 25, "Accessories");
+INSERT INTO my_store VALUES (8, "Sunglasses", 28, 100, "Accessories");
+INSERT INTO my_store VALUES (9, "Watch", 12, 15, "Accessories");
+INSERT INTO my_store VALUES (10, "Sandals", 24, 26, "Footwear");
+INSERT INTO my_store VALUES (11, "Loafers", 50, 22, "Footwear");
+INSERT INTO my_store VALUES (12, "Boots", 60, 20, "Footwear");
+INSERT INTO my_store VALUES (13, "Heels", 45, 30, "Footwear");
+INSERT INTO my_store VALUES (14, "Running Shoes", 75, 18, "Footwear");
+INSERT INTO my_store VALUES (15, "Water Shoes", 25, 12, "Footwear");
+
+SELECT MAX(price) 
+FROM my_store
+ORDER BY price;
